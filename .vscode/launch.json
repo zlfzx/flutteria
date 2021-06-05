@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "belajar_flutter",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "belajar_flutter (Flutter)",
+            "program": "lib/main.dart",
+            "request": "launch",
+            "type": "dart"
+        }
+    ]
+}
