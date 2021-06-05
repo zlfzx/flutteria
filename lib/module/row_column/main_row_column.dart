@@ -1,24 +1,12 @@
 import 'package:belajar_flutter/home.dart';
+import 'package:belajar_flutter/widgets/home_appbar.dart';
 import 'package:flutter/material.dart';
 
 class MainRowColumn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Row Column'),
-        leading: IconButton(
-          icon: Icon(Icons.home),
-          onPressed: () {
-            Navigator.pushReplacement(
-              context,
-              MaterialPageRoute(
-                builder: (_) => Home(),
-              ),
-            );
-          },
-        ),
-      ),
+      appBar: HomeAppbar('Row Column'),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [

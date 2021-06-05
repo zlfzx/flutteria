@@ -1,4 +1,5 @@
 import 'package:belajar_flutter/module/row_column/main_row_column.dart';
+import 'package:belajar_flutter/widgets/button_route.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatelessWidget {
@@ -12,17 +13,22 @@ class Home extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            ElevatedButton(
-              child: Text('Row Column'),
-              onPressed: () {
-                Navigator.pushReplacement(
-                  context,
-                  MaterialPageRoute(
-                    builder: (_) => MainRowColumn(),
-                  ),
-                );
-              },
-            )
+            ButtonRoute('Row Column', () {
+              Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(
+                  builder: (_) => MainRowColumn(),
+                ),
+              );
+            }),
+            ButtonRoute('Provider', () {
+              Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(
+                  builder: (_) => MainRowColumn(),
+                ),
+              );
+            }),
           ],
         ),
       ),
