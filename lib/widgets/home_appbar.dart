@@ -5,7 +5,7 @@ class HomeAppbar extends StatelessWidget implements PreferredSizeWidget {
   @override
   // ignore: todo
   // TODO: implement preferredSize
-  Size get preferredSize => const Size.fromHeight(50);
+  Size get preferredSize => const Size.fromHeight(kToolbarHeight);
 
   final String text;
 
