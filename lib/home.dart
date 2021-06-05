@@ -1,3 +1,4 @@
+import 'package:belajar_flutter/module/provider/main_provider.dart';
 import 'package:belajar_flutter/module/row_column/main_row_column.dart';
 import 'package:belajar_flutter/widgets/button_route.dart';
 import 'package:flutter/material.dart';
@@ -25,7 +26,7 @@ class Home extends StatelessWidget {
               Navigator.pushReplacement(
                 context,
                 MaterialPageRoute(
-                  builder: (_) => MainRowColumn(),
+                  builder: (_) => MainProvider(),
                 ),
               );
             }),
